@@ -14,18 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Bits and Bytes
-email: stanley.t.matthew@gmail.com
-author: Matthew Stanley
 description: > # this means to ignore newlines until "baseurl:"
     Here lies the website of Matthew Stanley, aspiring professional nerd.
     You will also find his blog Bits and Bytes, in which he discusses his
     two passions, cooking and code. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mtstanley.tech" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mstanleyth
-github_username: mthstanley
-instagram_username: 3geeky5me
-linkedin_username: matthew-stanley-90b5a8103
 
 # Build settings
 markdown: kramdown
