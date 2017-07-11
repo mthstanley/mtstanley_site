@@ -1,15 +1,50 @@
 ---
-layout: page
+layout: resume
 title: Resume
 permalink: /resume/
 ---
+{% assign author = site.data.author %}
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# {{ author.name }} 
+{: .name}
+## {{ author.description }}
+{{ author.location.address }} | {{ author.location. city }}, {{ author.location.postal_code }}  
+{{ author.phone }} | [{{ author.email }}](mailto:{{ author.email }})
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+### Education
+{% for education in author.educations %}
+#### [{{ education.institution }}]({{ education.website }})
+**{{ education.degree }}**  
+{{ education.start_date | date: "%b %d, %Y" }} - {{ education.end_date | date: "%b %d, %Y" }}
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Major
+: {{ education.major }}
+
+Minor
+: {{ education.minor }}
+
+GPA
+: {{ education.gpa }}
+
+Honors
+: {{ education.achievements | join: ', '}}  
+{% endfor %}
+
+### Skills
+{% assign skills_by_category = author.skills | group_by:"category" %}
+{% for skill_category in skills_by_category %}
+{% assign skill_names = skill_category.items | map: "name" %}
+{{ skill_category.name }}
+: {{ skill_names | join: ', ' }}
+{% endfor %}
+
+### Experience
+{% for experience in author.experiences %}
+#### [{{ experience.company }}]({{ experience.website }})  
+**{{ experience.position}}**  
+{{ experience.start_date | date: "%b %d, %Y" }} - {{ experience.end_date | date: "%b %d, %Y" }}  
+
+{% for highlight in experience.highlights %}
+- {{ highlight }}
+{% endfor %}
+{% endfor %}

@@ -1,0 +1,68 @@
+---
+#
+---
+
+@import "minima";
+
+.author {
+    
+    .author-graphic {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .author-name {
+        margin-bottom: 0px;
+    }
+
+    .author-description {
+        color: $grey-color-dark
+    }
+}
+
+.post-content {
+    
+    h1.name {
+        font-size: 42px;
+    }
+}
+
+svg#pie {
+
+    .arc text {
+        font: 14px sans-serif;
+        text-anchor: middle;
+    }
+
+    .arc path {
+        stroke: #fff;
+    }
+}
+
+dl {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: visible;
+}
+
+dt {
+    font-weight: bold;
+    flex: 0 0 40%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &:after {
+        content: ":";
+    }
+}
+
+dd {
+    flex: 0 0 60%;
+    margin-left: auto;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

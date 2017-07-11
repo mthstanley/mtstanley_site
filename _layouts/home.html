@@ -4,7 +4,9 @@ layout: default
 
 <div class="home">
 
-    <h1 class="page-heading">{{ site.data.author.name }}</h1>
+    <header class="post-header">
+        {% include author.html %}
+    </header>
 
     {{ content }}
 

@@ -1,3 +1,4 @@
+{% assign author = site.data.author %}
 <footer class="site-footer">
 
   <div class="wrapper">
@@ -8,41 +9,41 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>
-            {% if site.data.author.name %}
-              {{ site.data.author.name | escape }}
+            {% if author.name %}
+              {{ author.name | escape }}
             {% else %}
               {{ site.title | escape }}
             {% endif %}
             </li>
-            {% if site.data.author.email %}
-            <li><a href="mailto:{{ site.data.author.email }}">{{ site.data.author.email }}</a></li>
+            {% if author.email %}
+            <li><a href="mailto:{{ author.email }}">{{ author.email }}</a></li>
             {% endif %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          {% if site.data.author.github_username %}
+          {% if author.social.github %}
           <li>
-            {% include icon-github.html username=site.data.author.github_username %}
+            {% include icon-github.html social=author.social.github %}
           </li>
           {% endif %}
 
-          {% if site.data.author.twitter_username %}
+          {% if author.social.twitter %}
           <li>
-            {% include icon-twitter.html username=site.data.author.twitter_username %}
+            {% include icon-twitter.html social=author.social.twitter %}
           </li>
           {% endif %}
 
-          {% if site.data.author.instagram_username %}
+          {% if author.social.instagram %}
           <li>
-            {% include icon-instagram.html username=site.data.author.instagram_username %}
+            {% include icon-instagram.html social=author.social.instagram %}
           </li>
           {% endif %}
 
-          {% if site.data.author.linkedin_username %}
+          {% if author.social.linkedin %}
           <li>
-            {% include icon-linkedin.html username=site.data.author.linkedin_username %}
+            {% include icon-linkedin.html social=author.social.linkedin %}
           </li>
           {% endif %}
         </ul>
