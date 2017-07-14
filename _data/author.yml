@@ -12,6 +12,7 @@ location:
   city: Middlebury
   country_code: US
   region: Vermont
+resume_pdf: /assets/resume.pdf
 
 experiences: 
   - company: Middlebury College (Department of Computer Science)

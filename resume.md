@@ -9,7 +9,8 @@ permalink: /resume/
 {: .name}
 ## {{ author.description }}
 {{ author.location.address }} | {{ author.location. city }}, {{ author.location.postal_code }}  
-{{ author.phone }} | [{{ author.email }}](mailto:{{ author.email }})
+{{ author.phone }} | [{{ author.email }}](mailto:{{ author.email }})  
+\[ [pdf]({{ author.resume_pdf }}) \]  
 
 ### Education
 {% for education in author.educations %}
@@ -40,8 +41,8 @@ Honors
 
 ### Experience
 {% for experience in author.experiences %}
-#### [{{ experience.company }}]({{ experience.website }})  
-**{{ experience.position}}**  
+#### **{{ experience.position}}**  
+**[{{ experience.company }}]({{ experience.website }})**  
 {{ experience.start_date | date: "%b %d, %Y" }} - {{ experience.end_date | date: "%b %d, %Y" }}  
 
 {% for highlight in experience.highlights %}
