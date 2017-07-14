@@ -10,7 +10,7 @@ a lie, I love a lot of things) **cooking** and **computer science**.
 I recently graduated from [Middlebury College](http://www.middlebury.edu/) where I studied
 computer science and mathematics. While at Middlebury I worked at a restaurant
 named [American Flatbread](http://www.americanflatbread.com/), where I discovered
-that food and cooking it was really cool. I split my time between things like: 
+that food---preparing, eating, history of, **enjoying**---was really cool. I split my time between things like: 
 reading about the **OSI model** and researching the **Mother Sauces**. 
 
 Currently I'm looking to dive into a **career** as a **software developer**, as well as 
