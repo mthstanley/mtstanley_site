@@ -4,12 +4,20 @@
 
 @import "minima";
 
+nav.site-nav {
+    z-index: 1;
+}
+
 .author {
     
     .author-graphic {
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
+
+        i {
+            font-size: 4em;
+        }
     }
 
     .author-name {
