@@ -21,6 +21,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mtstanley.tech" # the base hostname & protocol for your site, e.g. http://example.com
 
+# google analytics tracking ID
+google_analytics: UA-102894689-1
+
 # Build settings
 markdown: kramdown
 theme: minima
