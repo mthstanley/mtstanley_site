@@ -194,7 +194,8 @@ skills:
 projects:
 
   - name: Twender
-    website: ''
+    website: 'http://twender.mtstanley.tech'
+    source: 'https://github.com/mthstanley/twender'
     description: >
       Web application for determining the gender of a given Twitter user.
 
