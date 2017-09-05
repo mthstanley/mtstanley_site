@@ -197,7 +197,15 @@ projects:
     website: 'http://twender.mtstanley.tech'
     source: 'https://github.com/mthstanley/twender'
     description: >
-      Web application for determining the gender of a given Twitter user.
+      Web application for determining the gender of a given Twitter user
+      using the text of their tweets.
+
+  - name: Stockpot
+    website: ''
+    source: 'https://github.com/mthstanley/stockpot'
+    description: >
+      Web application for storing and sharing your favorite recipes, with 
+      an emphasis on encouraging social interaction between users.
 
 social:
   twitter:
